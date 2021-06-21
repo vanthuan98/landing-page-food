@@ -95,3 +95,10 @@ menuBar.onclick = function () {
         menuMain.classList.remove('show-menu');
     }
 };
+
+// remove class show-menu when onclick
+document.querySelectorAll('.menu-main li').forEach((el) => {
+    el.onclick = function () {
+        menuMain.classList.remove('show-menu');
+    }
+ })
